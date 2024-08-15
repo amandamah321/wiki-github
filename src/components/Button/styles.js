@@ -12,10 +12,11 @@ export const ButtonContainer = styled.button`
     cursor: pointer;
     margin: 15px 0;
     transition: all 0.3s ease-in-out;
+    font-size: 20px;
 
     &:hover {
-        background-color: transparent;
-        color: #fafafa;
+        background-color: #fafafa;
+        opacity: 40%;        
     }
 
 `

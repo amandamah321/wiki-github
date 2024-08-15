@@ -55,12 +55,10 @@ function App() {
   return (
     <Container>
       <img src={logoImg} width={72} height={72} alt='github logo'/>
+      <h1>Github Repository Searcher</h1>
       <Input value={currentRepo} onChange={(e) => setCurrentRepo(e.target.value)}/>
       <ButtonSearch onClick={handleSearch}/>
-
-      
       {repos.map(repos => <ItemRepo handleRemoveRepos={handleRemoveRepos} repos={repos}/>)}
-      
     </Container>
   );
 }
